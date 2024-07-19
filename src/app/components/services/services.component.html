@@ -1,0 +1,34 @@
+<section class="re-services" id="services">
+    <div class="re-services__cloud-container">
+        <img class="re-services__cloud-2" src="/assets/images/cloud_2.png" alt="cloud_2">
+        <img class="re-services__cloud-1" src="/assets/images/cloud_1.png" alt="cloud_1">
+    </div>
+    <div class="re-services__header">
+        <re-title [title]="'Nuestros Servicios'"></re-title>
+        <div>
+            En <strong>Renacimiento Espiritual</strong>, nos dedicamos a brindarte una variedad de servicios espirituales especialmente diseñados para ayudarte a encontrar el amor, reconectar con tu pareja y fortalecer los vínculos afectivos mediante prácticas sagradas y devocionales. Con una profunda conexión a la sabiduría ancestral y el poder de la espiritualidad, cada uno de nuestros servicios está cuidadosamente creado para ofrecer resultados efectivos y duraderos.
+        </div>
+    </div>
+
+    <div class="re-services__container" >
+        <div class="re-services__card" *ngFor="let service of services" [id]="service.id">
+            <div class="re-services__card-inner">
+                <div class="re-services__card-front">
+                    <span>{{service.title}}</span>
+                </div>
+                <div class="re-services__card-back">
+                    <span>
+                        {{service.description}}
+                        <re-button>
+                            ¡Contactenos!
+                        </re-button>
+                    </span>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+
+</section>
