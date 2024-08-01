@@ -1,5 +1,5 @@
 .re-banner {
-    background: url('/assets/images/main-banner.png') no-repeat;
+    background: url('../../../assets/images/main-banner.png') no-repeat;
     background-position: top;
     background-size: cover;
     width: 100vw;
@@ -48,6 +48,22 @@
             color: var(--color-white);
 
             padding-left: 2rem;
+        }
+    }
+
+    @media (max-width: 550px) {
+        &__description {
+            width: 90%;
+            left: 50%;
+            transform: translate(-50%, -30%);
+
+            div:first-child {
+                h1 {
+                    font-size: 50px;
+                    line-height: 40px;
+                    text-shadow: 0 0 10px black;
+                }
+            }
         }
     }
 }

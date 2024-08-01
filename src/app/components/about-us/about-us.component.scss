@@ -1,11 +1,20 @@
 .re-about-us {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     background: var(--color-purple-800);
     position: relative;
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
 
     img {
         mix-blend-mode: color-dodge;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
     }
 
     &__horoscopo {
@@ -13,8 +22,8 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        width: 50vw;
-        height: 100vh;
+        width: 50%;
+        height: 90vh;
 
         &--circle, &--star {
             mix-blend-mode: overlay !important;
@@ -29,11 +38,8 @@
     }
 
     &__description {
-        position: absolute;
-        top: 50%;
-        width: 40%;
-        transform: translate(-40%, -50%);
-        left: 25%;
+        width: 50%;
+        padding: 0 0 0 8rem;
 
         div {
 
@@ -46,6 +52,21 @@
 
 
         }
+    }
+
+    @media (max-width: 550px) {
+        flex-wrap: wrap-reverse;
+
+        &__description {
+            width: 100%;
+            padding: 1rem;
+        }
+
+        &__horoscopo {
+            width: 100%;
+            height: 50vh;
+        }
+
     }
 }
 

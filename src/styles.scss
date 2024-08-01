@@ -4,7 +4,8 @@
 :root {
     --color-purple-900: #5B2D7C;
     --color-purple-800: #42205A;
-    --color-white: #FFF;
+    --color-purple-500: #74399E;
+    --color-white: #F9F9F9;
     --color-gold: #FFB31B;
     --color-black: #000;
 
@@ -15,14 +16,14 @@
 
 @font-face {
     font-family: 'Metal';
-    src: url('assets/fonts/Metal-Regular.woff2') format('woff2');
+    src: url('../src/assets/fonts/Metal-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Poppins';
-    src: url('assets/fonts/Poppins-Regular.woff2') format('woff2');
+    src: url('../src/assets/fonts/Poppins-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }

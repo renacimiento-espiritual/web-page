@@ -75,12 +75,14 @@
             top: 50%;
             transform: translateY(-25%);
             position: absolute;
+            max-width: 100%;
         }
 
         img:last-child {
             bottom: 0;
             right: 0;
             position: absolute;
+            max-width: 100%;
         }
     }
 
@@ -98,20 +100,21 @@
 
         &#retorno {
             .re-services__card-front {
-                background: url(/assets/images/retorno_de_pareja.png);
+                background: url(../../../assets/images/retorno_de_pareja.png);
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: contain;
             }
     
             .re-services__card-back {
-                background: url(/assets/images/card-back.png);
+                background: url(../../../assets/images/card-back.png);
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: contain;
             }
 
             &:hover {
+                
                 .re-services__card-inner {
                     transform: rotateY(180deg);
                     
@@ -121,14 +124,14 @@
        
         &#alejamiento {
             .re-services__card-front {
-                background: url(/assets/images/alejamiento_de_personas.png);
+                background: url(../../../assets/images/alejamiento_de_personas.png);
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: contain;
             }
     
             .re-services__card-back {
-                background: url(/assets/images/card-back.png);
+                background: url(../../../assets/images/card-back.png);
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: contain;
@@ -144,14 +147,14 @@
 
         &#endulzamiento {
             .re-services__card-front {
-                background: url(/assets/images/endulzamiento_amoroso.png);
+                background: url(../../../assets/images/endulzamiento_amoroso.png);
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: contain;
             }
     
             .re-services__card-back {
-                background: url(/assets/images/card-back.png);
+                background: url(../../../assets/images/card-back.png);
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: contain;
@@ -167,14 +170,14 @@
 
         &#limpia {
             .re-services__card-front {
-                background: url(/assets/images/limpias_espirituales.png);
+                background: url(../../../assets/images/limpias_espirituales.png);
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: contain;
             }
     
             .re-services__card-back {
-                background: url(/assets/images/card-back.png);
+                background: url(../../../assets/images/card-back.png);
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: contain;
@@ -190,14 +193,14 @@
 
         &#union {
             .re-services__card-front {
-                background: url(/assets/images/uniones_carnales.png);
+                background: url(../../../assets/images/uniones_carnales.png);
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: contain;
             }
     
             .re-services__card-back {
-                background: url(/assets/images/card-back.png);
+                background: url(../../../assets/images/card-back.png);
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: contain;
@@ -255,5 +258,37 @@
             transform-style: preserve-3d;
         }
         
+    }
+
+    @media (max-width: 550px) {
+        padding: 2rem 1rem;
+
+
+        &__header {
+            width: 100%;
+        }
+
+        &__card {
+            &-front span {
+                bottom: 8rem;
+                transform: translateX(-55%);
+
+            }
+
+            &:nth-child(4), &:nth-child(5) {
+                .re-services__card-front span {
+                    transform: translateX(-50%);
+                    bottom: 7.5rem;
+                }
+            }
+
+            &:hover {
+                .re-services__card-front {
+                    span {
+                        opacity: 0;
+                    }
+                }
+            }
+        }
     }
 }

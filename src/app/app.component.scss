@@ -1,7 +1,7 @@
 .re-content {
-    background: url('/assets/images/blue_sky2.png') no-repeat;
+    background: url('../assets/images/blue_sky2.png') no-repeat;
     background-position: top;
-    background-size: cover;
+    background-size: 100%;
     width: 100vw;
     min-height: 200vh;
     max-width: 1900px;
@@ -29,5 +29,10 @@
         right: 0;
         background: rgba(0, 0, 0, 0.61);
         mix-blend-mode: overlay;
+    }
+
+    @media (max-width: 550px) {
+        background-size: auto 100%;
+
     }
 }

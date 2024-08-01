@@ -1,0 +1,20 @@
+<section class="re-testimonials" id="testimonials">
+    <div class="re-testimonials__container-gray"></div>
+    <re-title [title]="'Historias de Transformación y Éxito'"></re-title>
+    <div class="re-testimonials__carousel">
+        <div class="re-testimonials__carousel-item" [class.active]="currentItem === i" *ngFor="let testimonial of testimonials; index as i">
+            <div>
+                <strong>{{testimonial.title}}</strong>
+                <p>
+                    {{testimonial.description}}
+                </p>
+            </div>
+            <div class="re-testimonials__images">
+                <img [src]="'./assets/images/' + testimonial.image" alt="testimonial">
+                <img src="./assets/images/frame.png" alt="frame" height="125%">
+            </div>
+        </div>
+        <img class="re-testimonials__carousel-arrow-left" src="./assets/images/left.png" alt="arrow_left" (click)="prev()">
+        <img class="re-testimonials__carousel-arrow-right" src="./assets/images/right.png" alt="arrow_right" (click)="next()">
+    </div>
+</section>
