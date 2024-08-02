@@ -19,7 +19,7 @@
                 <div class="re-services__card-back">
                     <span>
                         {{service.description}}
-                        <re-button>
+                        <re-button (trigger)="goToWhatsapp(service.link)">
                             ¡Contactenos!
                         </re-button>
                     </span>

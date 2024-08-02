@@ -17,4 +17,8 @@ import { ButtonComponent } from '../../core/components/button/button.component';
 })
 export class ServicesComponent {
   services = SERVICES;
+
+  goToWhatsapp(link: string): void {
+    window.open(link, "_blank");
+  }
 }
